@@ -113,8 +113,8 @@ const SEPOLIA_ADDRESSES: ChainAddresses = {
   tickLensAddress: '0xd7f33bcdb21b359c8ee6f0251d30e94832baad07'
 }
 
-// Avalanche v3 addresses
-const AVALANCHE_ADDRESSES: ChainAddresses = {
+// HARMONY v3 addresses
+const HARMONY_ADDRESSES: ChainAddresses = {
   v3CoreFactoryAddress: '0x740b1c1de25031C31FF4fC9A62f554A55cdC1baD',
   multicallAddress: '0x0139141Cd4Ee88dF3Cdb65881D411bAE271Ef0C2',
   quoterAddress: '0xbe0F5544EC67e9B3b2D979aaA43f18Fd87E6257F',
@@ -137,7 +137,7 @@ export const CHAIN_TO_ADDRESSES_MAP: Record<SupportedChainsType, ChainAddresses>
   [ChainId.OPTIMISM_GOERLI]: OPTIMISM_GOERLI_ADDRESSES,
   [ChainId.ARBITRUM_GOERLI]: ARBITRUM_GOERLI_ADDRESSES,
   [ChainId.SEPOLIA]: SEPOLIA_ADDRESSES,
-  [ChainId.AVALANCHE]: AVALANCHE_ADDRESSES
+  [ChainId.HARMONY]: HARMONY_ADDRESSES
 }
 
 /* V3 Contract Addresses */
