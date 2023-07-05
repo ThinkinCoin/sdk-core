@@ -1,7 +1,7 @@
 {
   "name": "@thinkincoin-libs/sdk-core",
   "license": "MIT",
-  "version": "3.3.1",
+  "version": "3.3.2",
   "description": "⚒️ An SDK for building applications on top of Uniswap V3",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -12,7 +12,7 @@
   "repository": "https://github.com/thinkincoin/sdk-core.git",
   "keywords": [
     "uniswap",
-    "ethereum"
+    "Harmony"
   ],
   "module": "dist/sdk-core.esm.js",
   "scripts": {
@@ -23,7 +23,7 @@
   },
   "dependencies": {
     "@ethersproject/address": "^5.0.2",
-    "@uniswap/sdk-core": "^4.0.1",
+    "@thinkincoin-libs/sdk-core": "^3.3.1",
     "big.js": "^5.2.2",
     "decimal.js-light": "^2.5.0",
     "jsbi": "^3.1.4",
