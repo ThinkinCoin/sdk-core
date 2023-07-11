@@ -123,6 +123,26 @@ const HARMONY_ADDRESSES: ChainAddresses = {
   tickLensAddress: '0xE37083979fc1Aba5309a9e9E6FAeEba9f34111A5',
   swapRouter02Address: '0x3A49a917c501eCcA3C1A256959BF8557DdF40514'
 }
+// Avalanche v3 addresses
+const AVALANCHE_ADDRESSES: ChainAddresses = {
+  v3CoreFactoryAddress: '0x740b1c1de25031C31FF4fC9A62f554A55cdC1baD',
+  multicallAddress: '0x0139141Cd4Ee88dF3Cdb65881D411bAE271Ef0C2',
+  quoterAddress: '0xbe0F5544EC67e9B3b2D979aaA43f18Fd87E6257F',
+  v3MigratorAddress: '0x44f5f1f5E452ea8d29C890E8F6e893fC0f1f0f97',
+  nonfungiblePositionManagerAddress: '0x655C406EBFa14EE2006250925e54ec43AD184f8B',
+  tickLensAddress: '0xEB9fFC8bf81b4fFd11fb6A63a6B0f098c6e21950',
+  swapRouter02Address: '0xbb00FF08d01D300023C629E8fFfFcb65A5a578cE'
+}
+// Base Goerli v3 addresses
+const BASE_GOERLI_ADDRESSES: ChainAddresses = {
+  v3CoreFactoryAddress: '0x9323c1d6D800ed51Bd7C6B216cfBec678B7d0BC2',
+  multicallAddress: '0xB206027a9E0E13F05eBEFa5D2402Bab3eA716439',
+  quoterAddress: '0xedf539058e28E5937dAef3f69cEd0b25fbE66Ae9',
+  v3MigratorAddress: '0x3efe5d02a04b7351D671Db7008ec6eBA9AD9e3aE',
+  nonfungiblePositionManagerAddress: '0x3c61369ef0D1D2AFa70d8feC2F31C5D6Ce134F30',
+  tickLensAddress: '0x1acB873Ee909D0c98adB18e4474943249F931b92',
+  swapRouter02Address: '0x8357227D4eDc78991Db6FDB9bD6ADE250536dE1d'
+}
 
 export const CHAIN_TO_ADDRESSES_MAP: Record<SupportedChainsType, ChainAddresses> = {
   [ChainId.MAINNET]: MAINNET_ADDRESSES,
@@ -137,6 +157,8 @@ export const CHAIN_TO_ADDRESSES_MAP: Record<SupportedChainsType, ChainAddresses>
   [ChainId.OPTIMISM_GOERLI]: OPTIMISM_GOERLI_ADDRESSES,
   [ChainId.ARBITRUM_GOERLI]: ARBITRUM_GOERLI_ADDRESSES,
   [ChainId.SEPOLIA]: SEPOLIA_ADDRESSES,
+  [ChainId.AVALANCHE]: AVALANCHE_ADDRESSES,
+  [ChainId.BASE_GOERLI]: BASE_GOERLI_ADDRESSES,
   [ChainId.HARMONY]: HARMONY_ADDRESSES
 }
 
