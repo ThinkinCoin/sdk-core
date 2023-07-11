@@ -24,6 +24,6 @@ export declare enum NativeCurrencyName {
     GNOSIS = "XDAI",
     MOONBEAM = "GLMR",
     BNB = "BNB",
-    ONE = "ONE"
+    HARMONY = "ONE"
 
 }
