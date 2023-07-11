@@ -23,7 +23,7 @@
   },
   "dependencies": {
     "@ethersproject/address": "^5.0.2",
-    "@thinkincoin-libs/sdk-core": "^3.3.1",
+    "@thinkincoin-libs/sdk-core": "^3.3.3",
     "big.js": "^5.2.2",
     "decimal.js-light": "^2.5.0",
     "jsbi": "^3.1.4",

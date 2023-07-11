@@ -24,9 +24,6 @@ export declare enum NativeCurrencyName {
     GNOSIS = "XDAI",
     MOONBEAM = "GLMR",
     BNB = "BNB",
-<<<<<<< HEAD
-    HARMONY = "ONE"
-=======
     ONE = "ONE"
->>>>>>> refs/remotes/origin/main
+
 }

@@ -241,5 +241,8 @@ export const SWAP_ROUTER_02_ADDRESSES = (chainId: number) => {
   if (chainId == ChainId.BNB) {
     return CHAIN_TO_ADDRESSES_MAP[chainId].swapRouter02Address
   }
+  if (chainId == ChainId.HARMONY) {
+    return CHAIN_TO_ADDRESSES_MAP[chainId].swapRouter02Address
+  }
   return '0x68b3465833fb72A70ecDF485E0e4C7bD8665Fc45'
 }
