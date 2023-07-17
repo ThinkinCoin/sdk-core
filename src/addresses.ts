@@ -115,13 +115,13 @@ const SEPOLIA_ADDRESSES: ChainAddresses = {
 
 // HARMONY v3 addresses
 const HARMONY_ADDRESSES: ChainAddresses = {
-  v3CoreFactoryAddress: '0x73e20b9dD9577ad6A5acafb27d1FB88D9d7d31d5',
-  multicallAddress: '0xdb5849ea2d14ec82f13d1cb7f08a9ca43c2c6754',
-  quoterAddress: '0x76376774BD25fE7bd4c5d12218A0ED3105E018d9',
-  v3MigratorAddress: '0x01777581f63daa788fdb8a86a1b1cecd04461d46',
-  nonfungiblePositionManagerAddress: '0x8f406502534d16BC40cea2AAd95915516b25Cc2E',
-  tickLensAddress: '0xE37083979fc1Aba5309a9e9E6FAeEba9f34111A5',
-  swapRouter02Address: '0x3A49a917c501eCcA3C1A256959BF8557DdF40514'
+  v3CoreFactoryAddress: '0x4b45Be9169DE6e3eE3b7874bfd34D4B7600E0B54',
+  multicallAddress: '0xe5c3eae4f851394dc54c1f4d30d540671fac29f9',
+  quoterAddress: '0x741002363a5e486ffa7225e3ac30cfd7fae4d021',
+  v3MigratorAddress: '0x1af1ab5b92c0fa1248d7fdac6fec0db4b4028a46',
+  nonfungiblePositionManagerAddress: '0x60D8A6bfD0E277436c9aa161c36d558523431291',
+  tickLensAddress: '0xae6f8ea20aa205b0777fd3dd658424435f06def7',
+  swapRouter02Address: '0x6368bf5fc15c5e75e0233483dfc2ea58f57c69c0'
 }
 // Avalanche v3 addresses
 const AVALANCHE_ADDRESSES: ChainAddresses = {
