@@ -116,7 +116,7 @@ const SEPOLIA_ADDRESSES: ChainAddresses = {
 // HARMONY v3 addresses
 const HARMONY_ADDRESSES: ChainAddresses = {
   v3CoreFactoryAddress: '0x4b45Be9169DE6e3eE3b7874bfd34D4B7600E0B54',
-  multicallAddress: '0xe5c3eae4f851394dc54c1f4d30d540671fac29f9',
+  multicallAddress: '0xAa85E4DACF85A2969459f9C915176aDBf25b3EB9', // multicall2 = 0xe5c3eae4f851394dc54c1f4d30d540671fac29f9
   quoterAddress: '0xd4bd8276503741eb6362663b4f2b2330d7042ebc',
   v3MigratorAddress: '0x1af1ab5b92c0fa1248d7fdac6fec0db4b4028a46',
   nonfungiblePositionManagerAddress: '0x60D8A6bfD0E277436c9aa161c36d558523431291',
