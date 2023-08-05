@@ -126,6 +126,7 @@ const HARMONY_ADDRESSES: ChainAddresses = {
   tickLensAddress: '0xae6f8ea20aa205b0777fd3dd658424435f06def7',
   v2CoreFactoryAddress: '0xE9b782912ee2E284f10FA4604478CE00cde365e7',
   multicall2Address: '0xe5c3eae4f851394dc54c1f4d30d540671fac29f9',
+  quoterV2Address: '0x741002363a5e486ffa7225e3ac30cfd7fae4d021',
   swapRouter02Address: '0x6368bf5fc15c5e75e0233483dfc2ea58f57c69c0'
 }
 // Avalanche v3 addresses
