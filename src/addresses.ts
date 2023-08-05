@@ -4,6 +4,9 @@ type AddressMap = { [chainId: number]: string }
 
 type ChainAddresses = {
   v3CoreFactoryAddress: string
+  v2CoreFactoryAddress?: string
+  multicall2Address?: string
+  quoterV2Address?: string
   multicallAddress: string
   quoterAddress: string
   v3MigratorAddress?: string
@@ -121,6 +124,8 @@ const HARMONY_ADDRESSES: ChainAddresses = {
   v3MigratorAddress: '0x1af1ab5b92c0fa1248d7fdac6fec0db4b4028a46',
   nonfungiblePositionManagerAddress: '0x60D8A6bfD0E277436c9aa161c36d558523431291',
   tickLensAddress: '0xae6f8ea20aa205b0777fd3dd658424435f06def7',
+  v2CoreFactoryAddress: '0xE9b782912ee2E284f10FA4604478CE00cde365e7',
+  multicall2Address: '0xe5c3eae4f851394dc54c1f4d30d540671fac29f9',
   swapRouter02Address: '0x6368bf5fc15c5e75e0233483dfc2ea58f57c69c0'
 }
 // Avalanche v3 addresses
@@ -183,6 +188,21 @@ export const V3_MIGRATOR_ADDRESSES: AddressMap = {
 export const MULTICALL_ADDRESSES: AddressMap = {
   ...SUPPORTED_CHAINS.reduce<AddressMap>((memo, chainId) => {
     memo[chainId] = CHAIN_TO_ADDRESSES_MAP[chainId].multicallAddress
+    return memo
+  }, {})
+}
+
+/* V2 Contract Addresses */
+export const V2_CORE_FACTORY_ADDRESSES: AddressMap = {
+  ...SUPPORTED_CHAINS.reduce<AddressMap>((memo, chainId) => {
+    memo[chainId] = CHAIN_TO_ADDRESSES_MAP[chainId].v2CoreFactoryAddress
+    return memo
+  }, {})
+}
+
+export const MULTICALL2_ADDRESSES: AddressMap = {
+  ...SUPPORTED_CHAINS.reduce<AddressMap>((memo, chainId) => {
+    memo[chainId] = CHAIN_TO_ADDRESSES_MAP[chainId].multicall2Address
     return memo
   }, {})
 }
