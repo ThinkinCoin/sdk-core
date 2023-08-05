@@ -4,9 +4,9 @@ type AddressMap = { [chainId: number]: string }
 
 type ChainAddresses = {
   v3CoreFactoryAddress: string
-  v2CoreFactoryAddress?: string
-  multicall2Address?: string
-  quoterV2Address?: string
+  v2CoreFactoryAddress: string
+  multicall2Address: string
+  quoterV2Address: string
   multicallAddress: string
   quoterAddress: string
   v3MigratorAddress?: string
@@ -46,7 +46,10 @@ const DEFAULT_ADDRESSES: ChainAddresses = {
   multicallAddress: '0x1F98415757620B543A52E61c46B32eB19261F984',
   quoterAddress: '0xb27308f9F90D607463bb33eA1BeBb41C27CE5AB6',
   v3MigratorAddress: '0xA5644E29708357803b5A882D272c41cC0dF92B34',
-  nonfungiblePositionManagerAddress: '0xC36442b4a4522E871399CD717aBDD847Ab11FE88'
+  nonfungiblePositionManagerAddress: '0xC36442b4a4522E871399CD717aBDD847Ab11FE88',
+  v2CoreFactoryAddress: '',
+  multicall2Address: '',
+  quoterV2Address: ''
 }
 const MAINNET_ADDRESSES: ChainAddresses = {
   ...DEFAULT_ADDRESSES,
@@ -72,7 +75,10 @@ const CELO_ADDRESSES: ChainAddresses = {
   quoterAddress: '0x82825d0554fA07f7FC52Ab63c961F330fdEFa8E8',
   v3MigratorAddress: '0x3cFd4d48EDfDCC53D3f173F596f621064614C582',
   nonfungiblePositionManagerAddress: '0x3d79EdAaBC0EaB6F08ED885C05Fc0B014290D95A',
-  tickLensAddress: '0x5f115D9113F88e0a0Db1b5033D90D4a9690AcD3D'
+  tickLensAddress: '0x5f115D9113F88e0a0Db1b5033D90D4a9690AcD3D',
+  v2CoreFactoryAddress: '',
+  multicall2Address: '',
+  quoterV2Address: ''
 }
 
 // BNB v3 addresses
@@ -83,7 +89,10 @@ const BNB_ADDRESSES: ChainAddresses = {
   v3MigratorAddress: '0x32681814957e0C13117ddc0c2aba232b5c9e760f',
   nonfungiblePositionManagerAddress: '0x7b8A01B39D58278b5DE7e48c8449c9f4F5170613',
   tickLensAddress: '0xD9270014D396281579760619CCf4c3af0501A47C',
-  swapRouter02Address: '0xB971eF87ede563556b2ED4b1C0b0019111Dd85d2'
+  swapRouter02Address: '0xB971eF87ede563556b2ED4b1C0b0019111Dd85d2',
+  v2CoreFactoryAddress: '',
+  multicall2Address: '',
+  quoterV2Address: ''
 }
 
 // optimism goerli addresses
@@ -93,7 +102,10 @@ const OPTIMISM_GOERLI_ADDRESSES: ChainAddresses = {
   quoterAddress: '0x9569CbA925c8ca2248772A9A4976A516743A246F',
   v3MigratorAddress: '0xf6c55fBe84B1C8c3283533c53F51bC32F5C7Aba8',
   nonfungiblePositionManagerAddress: '0x39Ca85Af2F383190cBf7d7c41ED9202D27426EF6',
-  tickLensAddress: '0xe6140Bd164b63E8BfCfc40D5dF952f83e171758e'
+  tickLensAddress: '0xe6140Bd164b63E8BfCfc40D5dF952f83e171758e',
+  v2CoreFactoryAddress: '',
+  multicall2Address: '',
+  quoterV2Address: ''
 }
 
 // arbitrum goerli v3 addresses
@@ -103,7 +115,10 @@ const ARBITRUM_GOERLI_ADDRESSES: ChainAddresses = {
   quoterAddress: '0x1dd92b83591781D0C6d98d07391eea4b9a6008FA',
   v3MigratorAddress: '0xA815919D2584Ac3F76ea9CB62E6Fd40a43BCe0C3',
   nonfungiblePositionManagerAddress: '0x622e4726a167799826d1E1D150b076A7725f5D81',
-  tickLensAddress: '0xb52429333da969a0C79a60930a4Bf0020E5D1DE8'
+  tickLensAddress: '0xb52429333da969a0C79a60930a4Bf0020E5D1DE8',
+  v2CoreFactoryAddress: '',
+  multicall2Address: '',
+  quoterV2Address: ''
 }
 
 // sepolia v3 addresses
@@ -113,7 +128,10 @@ const SEPOLIA_ADDRESSES: ChainAddresses = {
   quoterAddress: '0xEd1f6473345F45b75F8179591dd5bA1888cf2FB3',
   v3MigratorAddress: '0x729004182cF005CEC8Bd85df140094b6aCbe8b15',
   nonfungiblePositionManagerAddress: '0x1238536071E1c677A632429e3655c799b22cDA52',
-  tickLensAddress: '0xd7f33bcdb21b359c8ee6f0251d30e94832baad07'
+  tickLensAddress: '0xd7f33bcdb21b359c8ee6f0251d30e94832baad07',
+  v2CoreFactoryAddress: '',
+  multicall2Address: '',
+  quoterV2Address: ''
 }
 
 // HARMONY v3 addresses
@@ -137,7 +155,10 @@ const AVALANCHE_ADDRESSES: ChainAddresses = {
   v3MigratorAddress: '0x44f5f1f5E452ea8d29C890E8F6e893fC0f1f0f97',
   nonfungiblePositionManagerAddress: '0x655C406EBFa14EE2006250925e54ec43AD184f8B',
   tickLensAddress: '0xEB9fFC8bf81b4fFd11fb6A63a6B0f098c6e21950',
-  swapRouter02Address: '0xbb00FF08d01D300023C629E8fFfFcb65A5a578cE'
+  swapRouter02Address: '0xbb00FF08d01D300023C629E8fFfFcb65A5a578cE',
+  v2CoreFactoryAddress: '',
+  multicall2Address: '',
+  quoterV2Address: ''
 }
 // Base Goerli v3 addresses
 const BASE_GOERLI_ADDRESSES: ChainAddresses = {
@@ -147,7 +168,10 @@ const BASE_GOERLI_ADDRESSES: ChainAddresses = {
   v3MigratorAddress: '0x3efe5d02a04b7351D671Db7008ec6eBA9AD9e3aE',
   nonfungiblePositionManagerAddress: '0x3c61369ef0D1D2AFa70d8feC2F31C5D6Ce134F30',
   tickLensAddress: '0x1acB873Ee909D0c98adB18e4474943249F931b92',
-  swapRouter02Address: '0x8357227D4eDc78991Db6FDB9bD6ADE250536dE1d'
+  swapRouter02Address: '0x8357227D4eDc78991Db6FDB9bD6ADE250536dE1d',
+  v2CoreFactoryAddress: '',
+  multicall2Address: '',
+  quoterV2Address: ''
 }
 
 export const CHAIN_TO_ADDRESSES_MAP: Record<SupportedChainsType, ChainAddresses> = {
