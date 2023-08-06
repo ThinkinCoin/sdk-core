@@ -37,7 +37,7 @@ export const UNISWAP_NFT_AIRDROP_CLAIM_ADDRESS = '0x8B799381ac40b838BBA4131ffB26
 
 export const V2_FACTORY_ADDRESS = '0x5C69bEe701ef814a2B6a3EDD4B1652CB9cc5aA6f'
 export const V2_FACTORY_ADDRESSES: AddressMap = constructSameAddressMap(V2_FACTORY_ADDRESS)
-export const V2_ROUTER_ADDRESS = '0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D'
+export const V2_ROUTER_ADDRESS = '0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D' //0x7EA6BCbd2573B13AB7D1936c7451D212662F5eeF harmony
 export const V2_ROUTER_ADDRESSES: AddressMap = constructSameAddressMap(V2_ROUTER_ADDRESS)
 
 // Networks that share most of the same addresses i.e. Mainnet, Goerli, Optimism, Arbitrum, Polygon
@@ -145,7 +145,7 @@ const HARMONY_ADDRESSES: ChainAddresses = {
   v2CoreFactoryAddress: '0xE9b782912ee2E284f10FA4604478CE00cde365e7',
   multicall2Address: '0xe5c3eae4f851394dc54c1f4d30d540671fac29f9',
   quoterV2Address: '0x741002363a5e486ffa7225e3ac30cfd7fae4d021',
-  swapRouter02Address: '0x6368bf5fc15c5e75e0233483dfc2ea58f57c69c0'
+  swapRouter02Address: '0x7EA6BCbd2573B13AB7D1936c7451D212662F5eeF'
 }
 // Avalanche v3 addresses
 const AVALANCHE_ADDRESSES: ChainAddresses = {
@@ -221,13 +221,6 @@ export const MULTICALL_ADDRESSES: AddressMap = {
 export const V2_CORE_FACTORY_ADDRESSES: AddressMap = {
   ...SUPPORTED_CHAINS.reduce<AddressMap>((memo, chainId) => {
     memo[chainId] = CHAIN_TO_ADDRESSES_MAP[chainId].v2CoreFactoryAddress
-    return memo
-  }, {})
-}
-
-export const MULTICALL2_ADDRESSES: AddressMap = {
-  ...SUPPORTED_CHAINS.reduce<AddressMap>((memo, chainId) => {
-    memo[chainId] = CHAIN_TO_ADDRESSES_MAP[chainId].multicall2Address
     return memo
   }, {})
 }
